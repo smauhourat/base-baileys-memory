@@ -20,9 +20,9 @@ const QR_FILE = process.env.QR_FILE ?? 'bot';
 const PUBLIC_URL = process.env.PUBLIC_URL ?? process.env.RAILWAY_STATIC_URL ?? 'http://localhost';
 
 const dir = [join(__dirname, 'dist'), join(__dirname, '..', 'dist')].find((i) => existsSync(i));
-console.log('DIRECCION SERVIDOR WEB!!!!' + dir);
 console.log('HTTP_PORT:', HTTP_PORT);
 console.log('PUBLIC_URL:', PUBLIC_URL);
+console.log('DIRECCION SERVIDOR GEB!!!!' + dir);
 const serve = require$$4(dir);
 
 /**
